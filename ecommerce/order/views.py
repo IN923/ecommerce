@@ -17,7 +17,7 @@ from .permissions import UserAccessMethods_ForOrder
 from .utils import update_customer_order
 # Create your views here.
 
-client=razorpay.Client(auth=("rzp_test_STWQgpdqVFP8ME","VqrAfOECJ41tsab79Bp71Vte"))
+client=razorpay.Client(auth=("env","env"))
 
 @permission_classes([IsAuthenticated])
 @api_view(["POST"])
